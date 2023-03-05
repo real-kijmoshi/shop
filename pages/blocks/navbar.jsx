@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
 
-export const PageNavbar = () => {
+const PageNavbar = () => {
   const [bg, setBg] = useState("dark");
 
   if (typeof window !== "undefined") {
@@ -38,3 +37,6 @@ export const PageNavbar = () => {
     </Navbar>
   );
 };
+
+
+export default PageNavbar
