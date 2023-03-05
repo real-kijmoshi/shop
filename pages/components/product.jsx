@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import styles from "../../styles/Product.module.css"
+import styles from "../../styles/Product.module.css";
 
 export default function Product(props) {
   return (
     <div className={styles.product}>
       <img src={props.data?.image || ""} />
-      <h1>{props.data.product}</h1>
+      <h1>{props.data?.product || ""}</h1>
     </div>
   );
 }
