@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const PageNavbar = () => {
-  const [bg, setBg] = useState("dark");
+  const [bg, setBg] = useState("light");
 
   if (typeof window !== "undefined") {
     setBg(localStorage.getItem("bg") || "light");
@@ -14,11 +14,6 @@ const PageNavbar = () => {
     localStorage.setItem("bg", bg);
   }, [bg]);
 
-  const onButton = () => {
-    console.log(bg);
-    setBg(bg == "light" ? "dark" : "light")
-  }
-
   return (
     <Navbar collapseOnSelect expand="lg" bg={bg} variant={bg}>
       <Container>
@@ -26,8 +21,8 @@ const PageNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/static/contact">Contact</Nav.Link>
-            <Nav.Link href="/static/aboutus">about us</Nav.Link>
+            <Nav.Link href="/components/static/contact">Contact</Nav.Link>
+            <Nav.Link href="/components/static/aboutus">about us</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="/checkout">🛒</Nav.Link>
@@ -38,5 +33,4 @@ const PageNavbar = () => {
   );
 };
 
-
-export default PageNavbar
+export default PageNavbar;
