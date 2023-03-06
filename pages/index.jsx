@@ -26,6 +26,7 @@ export default function Home() {
         aria-label="Search"
         style={{ width: 200, margin: 20 }}
         onChange={onChange}
+        sticky="top"
       />
       <div id={styles.products} style={{ flex: 1, flexDirection: "row" }}>
         {products[0] ? (

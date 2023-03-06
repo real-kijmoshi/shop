@@ -5,13 +5,11 @@ import { useRouter } from "next/navigation";
 import { Button } from "react-bootstrap";
 
 export default function Product(props) {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleOnCLick = () => {
-    router.forward(`/product/${props.data?.id}`)
-  }
-
-  console.log();
+    router.forward(`/product/${props.data?.id}`);
+  };
 
   return (
     <div key={props.data?.id} className={styles.product}>
@@ -21,10 +19,10 @@ export default function Product(props) {
       />
       <h1>{props.data?.product || ""}</h1>
 
-      <div onClick={handleOnCLick} style={{marginRight: 10}}>
+      <div onClick={handleOnCLick} style={{ marginRight: 10 }}>
         <Button>add to cart</Button>
       </div>
-      <div href={`/product/${props.data.id}`} style={{marginLeft: 10}}>
+      <div href={`/product/${props.data.id}`} style={{ marginLeft: 10 }}>
         <Button>more info</Button>
       </div>
     </div>

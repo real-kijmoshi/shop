@@ -17,7 +17,7 @@ const PageNavbar = () => {
   }, [bg]);
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg={bg} variant={bg}>
+    <Navbar collapseOnSelect expand="lg" bg={bg} variant={bg} sticky="top">
       <Container>
         <Navbar.Brand href="/">Nextify</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
