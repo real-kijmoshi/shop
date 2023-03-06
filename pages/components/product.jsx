@@ -7,8 +7,9 @@ import { Button } from "react-bootstrap";
 export default function Product(props) {
   const router = useRouter();
 
+  const id = 1
   const handleOnCLick = () => {
-    router.forward(`/product/${props.data?.id}`);
+    router.forward(`/product/${id}`);
   };
 
   return (
@@ -22,7 +23,7 @@ export default function Product(props) {
       <div onClick={handleOnCLick} style={{ marginRight: 10 }}>
         <Button>add to cart</Button>
       </div>
-      <div href={`/product/${props.data.id}`} style={{ marginLeft: 10 }}>
+      <div href={`/product/${props.data?.id}`} style={{ marginLeft: 10 }}>
         <Button>more info</Button>
       </div>
     </div>
