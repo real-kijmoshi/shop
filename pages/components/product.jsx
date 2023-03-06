@@ -9,7 +9,8 @@ export default function Product(props) {
   const router = useRouter();
 
   const handleRedirect = () => {
-    router.forward(`/product/${props.data?.id}`);
+    console.log("redirecting ......");
+    router.push(`/product/${props.data?.id}`);
   };
 
   return (
@@ -24,8 +25,8 @@ export default function Product(props) {
         >
           <Button>add to cart</Button>
         </div>
-        <div onClick={handleRedirect} style={{ marginLeft: -5 }}>
-          <Button>more info</Button>
+        <div style={{ marginLeft: -5 }}>
+          <Button onClick={handleRedirect}>more info</Button>
         </div>
       </div>
     </div>

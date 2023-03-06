@@ -1,7 +1,10 @@
+import { parser } from "./products";
+
 export const addToCart = (product) => {
   if (typeof window !== "undefined") {
     const rawCart = localStorage.getItem("cart");
-    const cart = JSON.parse(rawCart != "" ? rawCart : "[]");
+    console.log("d: " + rawCart);
+    const cart = JSON.parse(rawCart != null ? rawCart : "[]");
 
     cart.push(product);
 
@@ -9,11 +12,12 @@ export const addToCart = (product) => {
   }
 };
 
-export const getAllCart = () => {
+export const getAllCartParsed = () => {
   if (typeof window !== "undefined") {
     const rawCart = localStorage.getItem("cart");
-    const cart = JSON.parse(rawCart != "" ? rawCart : "[]");
+    const cart = JSON.parse(![null, ""].includes(rawCart) ? rawCart : "[]");
 
-    return cart;
+    return cart.map(parser);
   }
 };
+
