@@ -8,13 +8,13 @@ export default function Product(props) {
   const router = useRouter()
 
   const handleOnCLick = () => {
-    router.forward(`/product/${props.data.id}`)
+    router.forward(`/product/${props.data?.id}`)
   }
 
   console.log();
 
   return (
-    <div key={props.data.id} className={styles.product}>
+    <div key={props.data?.id} className={styles.product}>
       <img
         src={props.data?.image || ""}
         style={{ width: 100, height: "auto" }}
