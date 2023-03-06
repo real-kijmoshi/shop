@@ -31,7 +31,7 @@ export default function Home() {
         {products[0] ? (
           products.map((data) => {
             // eslint-disable-next-line react/jsx-key
-            return <Product data={data} />;
+            return <Product data={data} key={data.id} />;
           })
         ) : (
           <h1> Nothing found </h1>
