@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap";
 export default function Product(props) {
   const router = useRouter()
   const handleOnCLick = () => {
-    router.forward(`/product/${props.data.id}`)
+    router.forward(`/product/${props.data?.id||"0"}`)
   }
 
   return (
