@@ -19,7 +19,6 @@ export default function Product(props) {
       <h1>{props.data?.product}</h1>
       {props.data?.price}$
       <br />
-
       <div id={styles.btns}>
         <div
           onClick={() => addToCart(props.data?.id)}

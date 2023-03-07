@@ -17,19 +17,19 @@ export const getAllCartParsed = () => {
     const rawCart = localStorage.getItem("cart");
     const cart = JSON.parse(![null, ""].includes(rawCart) ? rawCart : "[]");
 
-    const products = new Map()
-    cart.forEach(product => {
-      const data = parser(product)
-      data.quantity = products.get(product)?.quantity+1||1
+    const products = new Map();
+    cart.forEach((product) => {
+      const data = parser(product);
+      data.quantity = products.get(product)?.quantity + 1 || 1;
 
-      products.set(product, data)
+      products.set(product, data);
     });
 
-    const productsArray = []
+    const productsArray = [];
 
-    products.forEach(product => {
-      productsArray.push(product)
-    })
+    products.forEach((product) => {
+      productsArray.push(product);
+    });
 
     return productsArray;
   }

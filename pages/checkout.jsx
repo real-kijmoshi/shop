@@ -12,11 +12,11 @@ export default function Checkout() {
 
   return (
     <div>
-      {
-        cart[0] ? cart.map(data => {
-          return <CartProduct data={data} />
-        }) : "Empty cart"
-      }
+      {cart[0]
+        ? cart.map((data) => {
+            return <CartProduct data={data} />;
+          })
+        : "Empty cart"}
     </div>
   );
 }

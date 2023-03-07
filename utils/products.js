@@ -200,7 +200,11 @@ export const data = [
     product: "Gaming Mouse",
     category: "accessories",
     price: 29.99,
-    images: ["https://imgur.com/wvpHOCm.png", "https://imgur.com/wvpHOCm.png", "https://imgur.com/wvpHOCm.png"],
+    images: [
+      "https://imgur.com/wvpHOCm.png",
+      "https://imgur.com/wvpHOCm.png",
+      "https://imgur.com/wvpHOCm.png",
+    ],
   },
   {
     id: "30",
