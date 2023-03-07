@@ -1,15 +1,22 @@
+/* eslint-disable react/jsx-key */
 import { getAllCartParsed } from "@/utils/cart";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
+import CartProduct from "./components/cartProduct";
 
 export default function Checkout() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    setCart(getAllCartParsed())
+    setCart(getAllCartParsed());
   }, []);
 
-  return <>
-    products in cart: 
-    {cart.map(x => x.product).join("\n\n")}
-  </>;
+  return (
+    <div>
+      {
+        cart[0] ? cart.map(data => {
+          return <CartProduct data={data} />
+        }) : "Empty cart"
+      }
+    </div>
+  );
 }

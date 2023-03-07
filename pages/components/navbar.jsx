@@ -20,16 +20,13 @@ const PageNavbar = () => {
     <Navbar collapseOnSelect expand="lg" bg={bg} variant={bg} sticky="top">
       <Container>
         <Navbar.Brand href="/">Nextify</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/components/static/contact">Contact</Nav.Link>
-            <Nav.Link href="/components/static/aboutus">about us</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="/checkout">🛒</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        <Nav className="me-auto">
+          <Nav.Link href="/components/static/contact">Contact</Nav.Link>
+          <Nav.Link href="/components/static/aboutus">about us</Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link href="/checkout">🛒</Nav.Link>
+        </Nav>
       </Container>
     </Navbar>
   );

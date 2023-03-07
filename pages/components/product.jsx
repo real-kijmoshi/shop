@@ -15,8 +15,10 @@ export default function Product(props) {
 
   return (
     <div key={props.data?.id} className={styles.product}>
-      <img src={props.data?.image} style={{ width: 100, height: "auto" }} />
+      <img src={props.data?.images[0]} style={{ width: 100, height: "auto" }} />
       <h1>{props.data?.product}</h1>
+      {props.data?.price}$
+      <br />
 
       <div id={styles.btns}>
         <div
