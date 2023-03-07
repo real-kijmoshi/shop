@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
-import styles from "@/styles/cartProduct.module.css";
+import styles from "@/styles/CartProduct.module.css";
 
 export default function cartProduct(props) {
   const { product, images, price, quantity, id } = props?.data || {};
