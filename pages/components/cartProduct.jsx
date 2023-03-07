@@ -1,7 +1,7 @@
 import ImageSlider from "./imageSlider"
 
 export default function cartProduct(props) {
-  const { product, images, price, quantity, id } = props?.data||;
+  const { product, images, price, quantity, id } = props?.data||{};
 
   return (
     <div key={id}>
