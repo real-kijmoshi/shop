@@ -10,7 +10,7 @@ export default function Product(props) {
 
   const handleRedirect = () => {
     console.log("redirecting ......");
-    router.push(`/product/${props.data?.id}`);
+    router.push(`/product/${props?.data?.id}`);
   };
 
   return (
