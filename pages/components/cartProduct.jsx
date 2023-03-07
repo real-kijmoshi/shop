@@ -1,15 +1,25 @@
-import ImageSlider from "./imageSlider";
+/* eslint-disable @next/next/no-img-element */
+import { Button } from "react-bootstrap";
+import * as Icon from "react-bootstrap-icons";
+import styles from "@/styles/cartProduct.module.css";
 
 export default function cartProduct(props) {
   const { product, images, price, quantity, id } = props?.data || {};
 
   return (
-    <div key={id}>
-      <h1>{product}</h1>
-      <ImageSlider images={images || []} width={25} />
-      <h2>
-        {price}$ quanity: {quantity}
-      </h2>
+    <div key={id} style={{ textAlign: "center" }}>
+      <div>
+        <h3>{product}</h3>
+      </div>
+      <img src={images[0]} alt="" style={{ width: 100 }} />
+
+      <div>
+        (narazie nie dala ale potem bedzie )
+        <br />
+        <Button size="sm">+</Button>
+        {quantity}
+        <Button size="sm">-</Button>
+      </div>
     </div>
   );
 }

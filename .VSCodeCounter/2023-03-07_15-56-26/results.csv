@@ -1,0 +1,26 @@
+"filename", "language", "JSON with Comments", "JavaScript JSX", "JavaScript", "JSON", "Markdown", "CSS", "YAML", "comment", "blank", "total"
+"/Users/kijmoshi/Desktop/projects/shop/.eslintrc.json", "JSON with Comments", 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/Users/kijmoshi/Desktop/projects/shop/README.md", "Markdown", 0, 0, 0, 0, 23, 0, 0, 0, 16, 39
+"/Users/kijmoshi/Desktop/projects/shop/jsconfig.json", "JSON with Comments", 4, 0, 0, 0, 0, 0, 0, 4, 0, 8
+"/Users/kijmoshi/Desktop/projects/shop/next.config.js", "JavaScript", 0, 0, 4, 0, 0, 0, 0, 1, 2, 7
+"/Users/kijmoshi/Desktop/projects/shop/package-lock.json", "JSON", 0, 0, 0, 3732, 0, 0, 0, 0, 1, 3733
+"/Users/kijmoshi/Desktop/projects/shop/package.json", "JSON", 0, 0, 0, 30, 0, 0, 0, 0, 1, 31
+"/Users/kijmoshi/Desktop/projects/shop/pages/_app.js", "JavaScript", 0, 0, 5, 0, 0, 0, 0, 0, 2, 7
+"/Users/kijmoshi/Desktop/projects/shop/pages/_document.js", "JavaScript", 0, 0, 17, 0, 0, 0, 0, 0, 4, 21
+"/Users/kijmoshi/Desktop/projects/shop/pages/checkout.jsx", "JavaScript JSX", 0, 18, 0, 0, 0, 0, 0, 1, 4, 23
+"/Users/kijmoshi/Desktop/projects/shop/pages/components/cartProduct.jsx", "JavaScript JSX", 0, 13, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/kijmoshi/Desktop/projects/shop/pages/components/imageSlider.jsx", "JavaScript JSX", 0, 23, 0, 0, 0, 0, 0, 2, 4, 29
+"/Users/kijmoshi/Desktop/projects/shop/pages/components/navbar.jsx", "JavaScript JSX", 0, 28, 0, 0, 0, 0, 0, 0, 6, 34
+"/Users/kijmoshi/Desktop/projects/shop/pages/components/product.jsx", "JavaScript JSX", 0, 30, 0, 0, 0, 0, 0, 2, 4, 36
+"/Users/kijmoshi/Desktop/projects/shop/pages/index.jsx", "JavaScript JSX", 0, 39, 0, 0, 0, 0, 0, 1, 4, 44
+"/Users/kijmoshi/Desktop/projects/shop/pages/product/[id].jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 2, 3, 19
+"/Users/kijmoshi/Desktop/projects/shop/pages/static/aboutus.jsx", "JavaScript JSX", 0, 9, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/kijmoshi/Desktop/projects/shop/pages/static/contact.jsx", "JavaScript JSX", 0, 9, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/kijmoshi/Desktop/projects/shop/pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 3090, 0, 321, 3411
+"/Users/kijmoshi/Desktop/projects/shop/styles/Home.module.css", "CSS", 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"/Users/kijmoshi/Desktop/projects/shop/styles/Product.module.css", "CSS", 0, 0, 0, 0, 0, 20, 0, 0, 3, 23
+"/Users/kijmoshi/Desktop/projects/shop/styles/globals.css", "CSS", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/kijmoshi/Desktop/projects/shop/utils/cart.js", "JavaScript", 0, 0, 27, 0, 0, 0, 0, 0, 10, 37
+"/Users/kijmoshi/Desktop/projects/shop/utils/database/database.js", "JavaScript", 0, 0, 52, 0, 0, 0, 0, 10, 11, 73
+"/Users/kijmoshi/Desktop/projects/shop/utils/products.js", "JavaScript", 0, 0, 219, 0, 0, 0, 0, 0, 2, 221
+"Total", "-", 7, 183, 324, 3762, 23, 26, 3090, 23, 406, 7844

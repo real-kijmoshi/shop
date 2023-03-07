@@ -2,6 +2,7 @@
 import { getAllCartParsed } from "@/utils/cart";
 import { useState, useEffect } from "react";
 import CartProduct from "./components/cartProduct";
+import styles from "@/styles/Cart.module.css";
 
 export default function Checkout() {
   const [cart, setCart] = useState([]);
@@ -11,7 +12,7 @@ export default function Checkout() {
   }, []);
 
   return (
-    <div>
+    <div id={styles.products}>
       {cart[0]
         ? cart.map((data) => {
             return <CartProduct data={data} />;

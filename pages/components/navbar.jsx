@@ -23,7 +23,7 @@ const PageNavbar = () => {
           <Nav.Link href="/static/aboutus">about us</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="/checkout">🛒</Nav.Link>
+          <Nav.Link href="/cart">🛒</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

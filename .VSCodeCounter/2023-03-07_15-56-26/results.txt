@@ -1,0 +1,64 @@
+Date : 2023-03-07 15:56:26
+Directory : /Users/kijmoshi/Desktop/projects/shop
+Total : 24 files,  7415 codes, 23 comments, 406 blanks, all 7844 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |      3,762 |          0 |          2 |      3,764 |
+| YAML               |          1 |      3,090 |          0 |        321 |      3,411 |
+| JavaScript         |          6 |        324 |         11 |         31 |        366 |
+| JavaScript JSX     |          9 |        183 |          8 |         30 |        221 |
+| CSS                |          3 |         26 |          0 |          5 |         31 |
+| Markdown           |          1 |         23 |          0 |         16 |         39 |
+| JSON with Comments |          2 |          7 |          4 |          1 |         12 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                      |         24 |      7,415 |         23 |        406 |      7,844 |
+| . (Files)                                                              |          7 |      6,886 |          5 |        342 |      7,233 |
+| pages                                                                  |         11 |        205 |          8 |         36 |        249 |
+| pages (Files)                                                          |          4 |         79 |          2 |         14 |         95 |
+| pages/components                                                       |          4 |         94 |          4 |         17 |        115 |
+| pages/product                                                          |          1 |         14 |          2 |          3 |         19 |
+| pages/static                                                           |          2 |         18 |          0 |          2 |         20 |
+| styles                                                                 |          3 |         26 |          0 |          5 |         31 |
+| utils                                                                  |          3 |        298 |         10 |         23 |        331 |
+| utils (Files)                                                          |          2 |        246 |          0 |         12 |        258 |
+| utils/database                                                         |          1 |         52 |         10 |         11 |         73 |
++------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                               | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/kijmoshi/Desktop/projects/shop/.eslintrc.json                   | JSON with Comments |          3 |          0 |          1 |          4 |
+| /Users/kijmoshi/Desktop/projects/shop/README.md                        | Markdown           |         23 |          0 |         16 |         39 |
+| /Users/kijmoshi/Desktop/projects/shop/jsconfig.json                    | JSON with Comments |          4 |          4 |          0 |          8 |
+| /Users/kijmoshi/Desktop/projects/shop/next.config.js                   | JavaScript         |          4 |          1 |          2 |          7 |
+| /Users/kijmoshi/Desktop/projects/shop/package-lock.json                | JSON               |      3,732 |          0 |          1 |      3,733 |
+| /Users/kijmoshi/Desktop/projects/shop/package.json                     | JSON               |         30 |          0 |          1 |         31 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/_app.js                    | JavaScript         |          5 |          0 |          2 |          7 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/_document.js               | JavaScript         |         17 |          0 |          4 |         21 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/checkout.jsx               | JavaScript JSX     |         18 |          1 |          4 |         23 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/components/cartProduct.jsx | JavaScript JSX     |         13 |          0 |          3 |         16 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/components/imageSlider.jsx | JavaScript JSX     |         23 |          2 |          4 |         29 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/components/navbar.jsx      | JavaScript JSX     |         28 |          0 |          6 |         34 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/components/product.jsx     | JavaScript JSX     |         30 |          2 |          4 |         36 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/index.jsx                  | JavaScript JSX     |         39 |          1 |          4 |         44 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/product/[id].jsx           | JavaScript JSX     |         14 |          2 |          3 |         19 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/static/aboutus.jsx         | JavaScript JSX     |          9 |          0 |          1 |         10 |
+| /Users/kijmoshi/Desktop/projects/shop/pages/static/contact.jsx         | JavaScript JSX     |          9 |          0 |          1 |         10 |
+| /Users/kijmoshi/Desktop/projects/shop/pnpm-lock.yaml                   | YAML               |      3,090 |          0 |        321 |      3,411 |
+| /Users/kijmoshi/Desktop/projects/shop/styles/Home.module.css           | CSS                |          6 |          0 |          1 |          7 |
+| /Users/kijmoshi/Desktop/projects/shop/styles/Product.module.css        | CSS                |         20 |          0 |          3 |         23 |
+| /Users/kijmoshi/Desktop/projects/shop/styles/globals.css               | CSS                |          0 |          0 |          1 |          1 |
+| /Users/kijmoshi/Desktop/projects/shop/utils/cart.js                    | JavaScript         |         27 |          0 |         10 |         37 |
+| /Users/kijmoshi/Desktop/projects/shop/utils/database/database.js       | JavaScript         |         52 |         10 |         11 |         73 |
+| /Users/kijmoshi/Desktop/projects/shop/utils/products.js                | JavaScript         |        219 |          0 |          2 |        221 |
+| Total                                                                  |                    |      7,415 |         23 |        406 |      7,844 |
++------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
