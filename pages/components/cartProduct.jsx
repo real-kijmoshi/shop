@@ -14,7 +14,7 @@ export default function cartProduct(props) {
       <img src={images[0]||""} alt="" style={{ width: 100 }} />
 
       <div>
-        (narazie nie dala ale potem bedzie )
+        (przyciski nic nie robia narazie )
         <br />
         <Button size="sm">+</Button>
         {quantity}
