@@ -4,7 +4,7 @@ import * as Icon from "react-bootstrap-icons";
 import styles from "@/styles/CartProduct.module.css";
 
 export default function cartProduct(props) {
-  const { product, images, price, quantity, id } = props?.data || {};
+  const { product, images, price, quantity, id } = props?.data || {images: []};
 
   return (
     <div key={id} style={{ textAlign: "center" }}>
