@@ -6,7 +6,7 @@ export default function cartProduct(props) {
   return (
     <div key={id}>
       <h1>{name}</h1>
-      <ImageSlider images={images} width={25} />
+      <ImageSlider images={images||[]} width={25} />
       <h2>{price}$  quanity: {quantity}</h2>
     </div>
   );

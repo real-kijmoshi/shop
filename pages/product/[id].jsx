@@ -8,7 +8,7 @@ export default function product({ product }) {
     <div style={{ textAlign: "center" }}>
       todo - better this page
       <h1>{product.product}</h1>
-      <ImageSlider images={product.images} width={50} />
+      <ImageSlider images={product?.images||[]} width={50} />
     </div>
   );
 }
