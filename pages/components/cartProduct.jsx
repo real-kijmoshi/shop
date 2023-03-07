@@ -11,7 +11,7 @@ export default function cartProduct(props) {
       <div>
         <h3>{product}</h3>
       </div>
-      <img src={images[0]} alt="" style={{ width: 100 }} />
+      <img src={images[0]||""} alt="" style={{ width: 100 }} />
 
       <div>
         (narazie nie dala ale potem bedzie )
