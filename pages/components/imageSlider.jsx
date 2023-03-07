@@ -12,11 +12,11 @@ export default function Slider(props) {
 
   return (
     <div id="slider">
-      {props.images.map((image) => (
+      {props.images?.map((image) => (
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
             <img
-              className={`d-block w-${props.width}`}
+              className={`d-block w-${props?.width}`}
               src={image}
               alt="product"
             />
