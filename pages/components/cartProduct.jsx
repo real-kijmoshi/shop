@@ -4,14 +4,16 @@ import * as Icon from "react-bootstrap-icons";
 import styles from "@/styles/CartProduct.module.css";
 
 export default function cartProduct(props) {
-  const { product, images, price, quantity, id } = props?.data || {images: []};
+  const { product, images, price, quantity, id } = props?.data || {
+    images: [],
+  };
 
   return (
     <div key={id} style={{ textAlign: "center" }}>
       <div>
         <h3>{product}</h3>
       </div>
-      <img src={images[0]||""} alt="" style={{ width: 100 }} />
+      <img src={images[0] || ""} alt="" style={{ width: 100 }} />
 
       <div>
         (przyciski nic nie robia narazie )

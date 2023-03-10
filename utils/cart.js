@@ -34,3 +34,12 @@ export const getAllCartParsed = () => {
     return productsArray;
   }
 };
+
+export const getNumberOfItems = () => {
+  if (typeof window != "undefind") {
+    const rawCart = localStorage.getItem("cart");
+    const cart = JSON.parse(![null, ""].includes(rawCart) ? rawCart : "[]");
+
+    return cart.length;
+  }
+};

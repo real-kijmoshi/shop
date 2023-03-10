@@ -8,6 +8,11 @@ import { addToCart } from "@/utils/cart";
 export default function Product(props) {
   const router = useRouter();
 
+  const handleButton = (id) => {
+    props.addProductsNum();
+    addToCart(id);
+  };
+
   const handleRedirect = () => {
     console.log("redirecting ......");
     router.push(`/product/${props?.data?.id}`);
@@ -20,11 +25,10 @@ export default function Product(props) {
       {props.data?.price}$
       <br />
       <div id={styles.btns}>
-        <div
-          onClick={() => addToCart(props.data?.id)}
-          style={{ marginRight: -5 }}
-        >
-          <Button>add to cart</Button>
+        <div style={{ marginRight: -5 }}>
+          <Button onClick={() => handleButton(props.data?.id)}>
+            add to cart
+          </Button>
         </div>
         <div style={{ marginLeft: -5 }}>
           <Button onClick={handleRedirect}>more info</Button>
