@@ -11,7 +11,7 @@ export default function cartProduct(props) {
   };
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [quantity, setQuantity] = useState(props?.data.quantity||0);
+  const [quantity, setQuantity] = useState(props.data?.quantity||0);
 
   const handleAdd = () => {
     addToCart(id)
