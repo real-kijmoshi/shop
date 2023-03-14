@@ -2,11 +2,21 @@
 import { Button } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import styles from "@/styles/CartProduct.module.css";
+import { deleteOne, addToCart, getQuantity } from "@/utils/cart.js"
+import {useState} from "react"
 
 export default function cartProduct(props) {
-  const { product, images, price, quantity, id } = props?.data || {
+  const { product, images, price, id } = props?.data || {
     images: [],
   };
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [quantity, setQuantity] = useState(props.data.quantity);
+
+  const handleAdd = () => {
+    addToCart(id)
+    setQuantity(getQuantity(id))
+  }
 
   return (
     <div key={id} style={{ textAlign: "center" }}>
@@ -18,9 +28,9 @@ export default function cartProduct(props) {
       <div>
         (przyciski nic nie robia narazie )
         <br />
-        <Button size="sm">+</Button>
+        <Button size="sm" onClick={handleAdd}>+</Button>
         {quantity}
-        <Button size="sm">-</Button>
+        <Button size="sm" onClick={() => setQuantity(deleteOne(id))}>-</Button>
       </div>
     </div>
   );

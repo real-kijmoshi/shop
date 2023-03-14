@@ -14,7 +14,7 @@ export default function Checkout() {
   return (
     <div id={styles.products}>
       {cart[0]
-        ? cart.map((data) => {
+        ? cart.sort((a, b) => a.product.localeCompare(b.product)).map((data) => {
             return <CartProduct data={data} />;
           })
         : "Empty cart"}

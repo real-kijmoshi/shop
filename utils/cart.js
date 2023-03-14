@@ -35,6 +35,22 @@ export const getAllCartParsed = () => {
   }
 };
 
+export const getQuantity = id => {
+  return getAllCartParsed().filter(item => item.id == id)[0].quantity
+}
+
+export const deleteOne = id => {
+  const rawCart = localStorage.getItem("cart");
+  console.log("d: " + rawCart);
+  let cart = JSON.parse(rawCart != null ? rawCart : "[]");
+
+  const index = cart.indexOf(id)
+  cart = cart.slice(0, index).concat(cart.slice(index+1))
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  return getQuantity(id)
+}
+
 export const getNumberOfItems = () => {
   if (typeof window != "undefind") {
     const rawCart = localStorage.getItem("cart");
