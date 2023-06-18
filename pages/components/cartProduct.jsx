@@ -26,7 +26,6 @@ export default function cartProduct(props) {
       <img src={images[0] || ""} alt="" style={{ width: 100 }} />
 
       <div>
-        (przyciski nic nie robia narazie )
         <br />
         <Button size="sm" onClick={handleAdd}>+</Button>
         {quantity}
